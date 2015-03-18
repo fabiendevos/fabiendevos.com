@@ -1,1 +1,17 @@
-Fabien Devos
+---
+title: Fabien Devos
+layout: default
+---
+
+<h1>Fabien Devos</h1>
+<p>Hi, I'm Fabien</p>
+
+<h2>Blog articles</h2>
+
+{% for post in site.posts %}
+
+    <hr>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p> {{ post.date | date: "%B %e, %Y" }}</p>
+
+{% endfor %}

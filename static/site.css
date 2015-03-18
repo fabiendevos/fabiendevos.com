@@ -1,0 +1,41 @@
+
+body {
+  background: transparent;
+  padding-top: 70px;
+}
+
+div {
+  color: white;
+}
+
+html {
+  z-index: 1;
+  background: url(/images/cover_blurred2.jpg) no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.blurry {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.transparent-frame {
+  background: rgba(0, 0, 0, 0.33);
+  border-radius: 4px;
+}
+
+.gray-scale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
