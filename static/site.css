@@ -1,17 +1,97 @@
+:root {
+  /* Colors ----------------------------- */
+  /* Palette */
+  /* https://coolors.co/30292f-413f54-5f5aa2-b3c2f2-c2c1c2-fffffb-fffffa-44a1a0-78cdd7 */
+  --primary-color: #30292F;
+  --secondary-color: #413F54;
+  --accent-color: #5F5AA2;
+  --accent-high-color: #B3C2F2;
+  --slate-high-color: #C2C1C2;
+  --slate-low-color: #FFFFFB;
+  --secondary-accent-color: #44A1A0;
+  --secondary-accent-high-color: #78CDD7;
 
-body {
-  padding-top: 70px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* Semantic colors */
+  --text-color: var(--primary-color);
+  --secondary-text-color: var(--secondary-color);
+  --link-color: var(--accent-color);
+  --background-high-color: var(--slate-high-color);
+  --background-low-color: var(--slate-low-color);
+  --text-vibrant-color: var(--slate-low-color);
+  --link-vibrant-color: var(--secondary-accent-high-color);
+  --background-vibrant-color: var(--accent-color);
+
+  /* Spacing ----------------------------- */
+  --large-spacing: 1.5rem;
+  --normal-spacing: 1rem;
+  --small-spacing: 0.5rem;
 }
 
+/* Normal content ----------------------------- */
+body {
+  background-color: var(--background-low-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+/* Vibrant ----------------------------- */
+.vibrant {
+  background-color: var(--background-vibrant-color);
+  padding: var(--normal-spacing);
+  color: var(--text-vibrant-color);
+}
+.vibrant a {
+  color: var(--link-vibrant-color);
+  text-decoration: none;
+}
+.vibrant a:hover {
+  color: var(--link-vibrant-color);
+  text-decoration: underline;
+}
+
+/* Navbar ----------------------------- */
+.navbar {
+  /* background-color: var(--background-high-color);
+  padding: var(--normal-spacing); */
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /* Stick to top */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #111;
+}
+
+/* Utilities ----------------------------- */
+
 .blurry {
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
   filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 .transparent-frame {
@@ -19,10 +99,7 @@ body {
   border-radius: 4px;
 }
 
-.gray-scale {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+.grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
