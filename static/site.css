@@ -32,7 +32,6 @@ body {
   background-color: var(--background-low-color);
   color: var(--text-color);
 }
-
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -40,6 +39,9 @@ a {
 a:hover {
   color: var(--link-color);
   text-decoration: underline;
+}
+.content {
+  padding: var(--normal-spacing);
 }
 
 /* Vibrant ----------------------------- */
@@ -85,6 +87,14 @@ a:hover {
 }
 .navbar li a:hover {
   background-color: #111;
+}
+
+/* Profile ----------------------------- */
+.profilepic {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  float: right;
 }
 
 /* Utilities ----------------------------- */
