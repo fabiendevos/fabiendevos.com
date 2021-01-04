@@ -63,6 +63,11 @@ a:hover {
 .navbar {
   /* background-color: var(--background-high-color);
   padding: var(--normal-spacing); */
+
+  /* Stick to top */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 .navbar ul {
   list-style-type: none;
@@ -70,10 +75,6 @@ a:hover {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  /* Stick to top */
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
 .navbar li {
   float: left;
@@ -95,6 +96,7 @@ a:hover {
   width: 100px;
   height: 100px;
   float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Utilities ----------------------------- */
